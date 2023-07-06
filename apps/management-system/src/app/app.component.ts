@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { range } from '@nx-evnironment/utils';
+
 @Component({
   standalone: true,
   imports: [NxWelcomeComponent, RouterModule],
@@ -11,7 +12,7 @@ import { range } from '@nx-evnironment/utils';
 })
 export class AppComponent implements OnInit{
   ngOnInit(): void {
-    console.log(range(10,15))
+    console.log(range(10,20))
   }
-  title = 'shop';
+  title = 'management-system';
 }
